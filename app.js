@@ -1,3 +1,4 @@
+const ExplorerController = require("./lib/controllers/ExplorerController");
 const ExplorerService = require("./lib/services/ExplorerService");
 const FizzbuzzService = require("./lib/services/FizzbuzzService");
 const Reader = require("./lib/utils/Reader");
@@ -21,3 +22,5 @@ console.log(FizzbuzzService.applyValidationInExplorer(explorer5));
 const explorer15 = { name: "Explorer15", score: 15 };
 FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 console.log(FizzbuzzService.applyValidationInExplorer(explorer15));
+
+console.log(ExplorerController.getExplorersUsernamesByMission("node"));
